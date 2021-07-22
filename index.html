@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Color Generator</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+
+        <script type="text/javascript">
+            function changeColor()
+            {                
+                var hex = "0123456789ABCDEF";                       //numbers and letter used for the hex value
+                var color = "#";                                    //variable used to store the color (used to show it later in the page)
+                document.getElementById("lable").innerHTML = " ";   //clears the h1 element
+                
+                //loops 6 times and each time it randomly selects a number or letter for the hex value
+                for(i = 0; i < 6; i++)
+                {
+                    color += hex[Math.floor(Math.random() * 16)];
+                }
+
+                //changes the h1 element to the randomized hex value
+                document.getElementById("lable").innerHTML = color;
+                //changes the background color of the page to the randomized color
+                document.body.style.backgroundColor = color;
+
+            };
+        </script>
+    </head>
+    <body>
+        <div id="h1-background">
+            <h1 id="lable">#FFFFFF</h1>
+        </div>
+        
+        <button type="button" onclick=changeColor();>Randomize</button>
+    </body>
+</html>

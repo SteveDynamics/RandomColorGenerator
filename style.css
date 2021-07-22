@@ -1,0 +1,23 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+}
+button {
+    border: 3px solid black;
+    font-size: 30px;
+    font-family: Roboto;
+    padding: 16px;
+}
+
+button:hover {
+    background-color: rgb(165, 253, 177);
+}
+h1 {
+    font-size: 50px;
+    margin-top: 370px;
+    font-family: Anton;
+    letter-spacing: 1px;
+}
